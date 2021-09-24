@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular" rel="stylesheet" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form">
+            <form class="contact_form" action="https://60376bfd5435040017722533.mockapi.io/form" method="POST">
+                <h1 class="form_title">Задать вопрос</h1>
+                <div class="form_item">
+                    <input type="text" name="name" class="form_input" placeholder="Фамилия Имя Отчество *" required pattern="^[А-Яа-яЁё\s]+$">
+                </div>
+                <div class="form_item">
+                    <input type="tel" name="phone" class="form_input" placeholder="Телефон *" required pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$">
+                </div>
+                <div class="form_item">
+                    <input type="email" name="email" class="form_input" placeholder="Email" pattern="\S+@[a-z]+.[a-z]+">
+                </div>
+                <button type="submit" class="form_button">ОТПРАВИТЬ ЗАПРОС</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
